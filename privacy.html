@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guzman Hub — Privacy Policy</title>
+<style>
+  :root { --ink:#10151c; --ink-2:#171e28; --line:#2a3442; --text:#e8e6e1; --muted:#97a0ac; --brass:#c9a45c; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:"Avenir Next","Segoe UI",system-ui,sans-serif;
+    background:radial-gradient(1100px 600px at 50% -10%, #1b2430 0%, var(--ink) 60%);
+    color:var(--text); min-height:100vh; }
+  .gate { min-height:100vh; display:grid; place-items:center; padding:32px 20px; }
+  .card { width:min(640px,100%); background:var(--ink-2); border:1px solid var(--line);
+    border-radius:14px; padding:44px 36px 32px; box-shadow:0 24px 60px rgba(0,0,0,.45); }
+  h1 { font-size:22px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; text-align:center; }
+  .sub { color:var(--muted); font-size:13.5px; letter-spacing:.04em; margin:6px 0 10px; text-align:center; }
+</style>
+<style>
+  .policy { max-width: 640px; text-align: left; }
+  .policy h1 { font-size: 22px; text-align: center; }
+  .policy .sub { text-align: center; }
+  .policy h2 { font-size: 14px; color: var(--brass); letter-spacing: .06em;
+               text-transform: uppercase; margin: 22px 0 8px; }
+  .policy p, .policy li { font-size: 13.5px; line-height: 1.6; color: var(--text); }
+  .policy ul { padding-left: 20px; margin: 6px 0; }
+  .policy .back { display: inline-block; margin-top: 26px; color: var(--muted);
+                  font-size: 13px; text-decoration: none; }
+  .policy .back:hover { color: var(--brass); }
+</style>
+</head>
+<body>
+<main class="gate">
+  <div class="card policy">
+    <h1>Privacy Policy</h1>
+    <p class="sub">Guzman Hub &mdash; effective July 2026 (v1.0)</p>
+
+    <h2>What this application is</h2>
+    <p>Guzman Hub is a private, personal-use financial dashboard operated by its
+    sole owner, Javier Guzman. It has exactly one user: the owner. It is not
+    offered to the public, has no customers, and serves no third parties.</p>
+
+    <h2>What data is collected</h2>
+    <p>With the owner's authorization through Plaid, the application retrieves
+    financial data for accounts the owner holds: account balances, transaction
+    history, and liability details (such as credit card balances and due dates).
+    The application collects no data about anyone other than the owner.</p>
+
+    <h2>How data is used</h2>
+    <p>Data is used solely to display the owner's finances to the owner:
+    spending categorization, cash-flow tracking, subscription detection, and
+    debt monitoring. It is never used for advertising, profiling, or any
+    commercial purpose.</p>
+
+    <h2>Sharing and selling</h2>
+    <p>No data is sold, rented, or shared with any third party. Data moves
+    between exactly two parties: Plaid (the authorized data network) and this
+    application's private database.</p>
+
+    <h2>How data is protected</h2>
+    <ul>
+      <li>All data in transit is encrypted with TLS 1.2 or higher.</li>
+      <li>All data at rest is encrypted (AES-256) in a private database with
+      row-level security enabled and deny-by-default access.</li>
+      <li>Access to this application requires passkey authentication with
+      biometric or device-PIN verification. No passwords exist on this system.</li>
+      <li>The application holds read-only financial data access and cannot
+      move funds.</li>
+    </ul>
+
+    <h2>Data retention and deletion</h2>
+    <p>Data is retained while the Hub is in service, for the owner's historical
+    analysis. The owner may delete any or all data at any time, and may revoke
+    Plaid's access to any linked institution at any time via Plaid's tools or
+    the institution directly.</p>
+
+    <h2>Plaid</h2>
+    <p>Bank connections are made through Plaid. Plaid's handling of data is
+    described in its own end-user privacy policy at
+    plaid.com/legal/#end-user-privacy-policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: the owner's operations email, on file with
+    Plaid as this application's support contact.</p>
+
+    <a class="back" href="index.html">&larr; Back</a>
+  </div>
+</main>
+</body>
+</html>

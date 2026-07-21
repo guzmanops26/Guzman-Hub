@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guzman Hub — Private financial infrastructure</title>
+<meta name="description" content="Guzman Hub is a private, personal-use financial dashboard operated by its sole owner. Read-only aggregation of the owner's own accounts. No customers, no data sharing.">
+<style>
+  :root {
+    --ink: #10151c; --ink-2: #171e28; --line: #2a3442;
+    --text: #e8e6e1; --muted: #97a0ac; --brass: #c9a45c;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    background: radial-gradient(1100px 600px at 50% -10%, #1b2430 0%, var(--ink) 60%);
+    color: var(--text); min-height: 100vh;
+    display: grid; place-items: center; padding: 32px 20px;
+  }
+  .card {
+    width: min(560px, 100%); background: var(--ink-2);
+    border: 1px solid var(--line); border-radius: 14px;
+    padding: 48px 40px 36px; box-shadow: 0 24px 60px rgba(0,0,0,.45);
+  }
+  .mark { text-align: center; margin-bottom: 18px; }
+  h1 {
+    text-align: center; font-size: 26px; font-weight: 600;
+    letter-spacing: .12em; text-transform: uppercase;
+  }
+  .tag { text-align: center; color: var(--muted); font-size: 14px;
+         letter-spacing: .04em; margin: 8px 0 30px; }
+  h2 { font-size: 13px; color: var(--brass); letter-spacing: .07em;
+       text-transform: uppercase; margin: 24px 0 8px; }
+  p, li { font-size: 14px; line-height: 1.65; color: var(--text); }
+  ul { padding-left: 20px; }
+  .footer {
+    margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line);
+    font-size: 12.5px; color: var(--muted); line-height: 1.6; text-align: center;
+  }
+  a { color: var(--brass); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="mark" aria-hidden="true">
+    <svg viewBox="0 0 48 48" width="48" height="48">
+      <circle cx="24" cy="24" r="19" fill="none" stroke="#c9a45c" stroke-width="2.5"/>
+      <circle cx="24" cy="24" r="11" fill="none" stroke="#c9a45c" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <circle cx="24" cy="24" r="3.5" fill="#c9a45c"/>
+    </svg>
+  </div>
+  <h1>Guzman Hub</h1>
+  <p class="tag">Private financial infrastructure</p>
+
+  <h2>What this is</h2>
+  <p>Guzman Hub is a personal-use financial dashboard built and operated by its
+  sole owner. It aggregates the owner's own bank, savings, and credit accounts
+  into a single private database to track spending, cash flow, subscriptions,
+  and debt over time.</p>
+
+  <h2>What it is not</h2>
+  <p>It is not a product or service. It has no customers, no sign-ups, and no
+  users other than its owner. It cannot move money — all financial data access
+  is read-only.</p>
+
+  <h2>How it handles data</h2>
+  <ul>
+    <li>Bank connections are made through <a href="https://plaid.com" rel="noopener">Plaid</a>,
+    with the owner's explicit authorization per institution.</li>
+    <li>All data is encrypted in transit (TLS 1.2+) and at rest (AES-256).</li>
+    <li>Application access requires passkey authentication — no passwords exist on the system.</li>
+    <li>No data is ever sold or shared with any third party.</li>
+  </ul>
+
+  <p style="margin-top:16px">Full details: <a href="privacy.html">Privacy Policy</a></p>
+
+  <div class="footer">
+    Contact: guzmanops26@gmail.com<br>
+    &copy; 2026 Javier Guzman &middot; Personal project
+  </div>
+</main>
+</body>
+</html>
